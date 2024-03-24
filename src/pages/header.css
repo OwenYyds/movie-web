@@ -1,0 +1,53 @@
+/**
+ * FILEPATH: /Users/owen/Person/Practice/movie-web/src/pages/header.css
+ * 
+ * This CSS file contains styles for the header section of a web page.
+ */
+
+/**
+ * Styles for the header element.
+ */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+  transition: 0.5s;
+  z-index: 10000;
+}
+
+/**
+ * Styles for the header element when it has the "scrolled" class.
+ */
+header.scrolled {
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid var(--primary);
+  border-image: liner-gradient(90deg, tansparent, var(--primary), transparent)
+    30;
+  backdrop-filter: blur(20px);
+  padding: 10px 100px;
+}
+
+/**
+ * Styles for the logo element within the header.
+ */
+.logo {
+  font-family: "Racing sans one", "cursive";
+  font-size: 35px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/**
+ * Styles for the navigation elements within the header.
+ */
+.nav {
+  display: flex;
+}
