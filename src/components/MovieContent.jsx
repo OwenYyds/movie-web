@@ -12,11 +12,7 @@ function MovieContent({ movie }) {
         <span>{movie.length}</span>
         <span>{movie.category}</span>
       </h4>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta sit
-        unde, cumque a dolores, itaque voluptates delectus accusamus quam qui
-        mollitia ipsum, ea molestias vero eos commodi sapiente ad nisi?
-      </p>
+      <p>{movie.description}</p>
       <div className="button">
         <Button
           icon={<i className="bi bi-bookmark"></i>}
