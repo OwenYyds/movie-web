@@ -5,7 +5,7 @@ import "./movieSwiper.css";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-function MovieSwiper({ slides }) {
+function MovieSwiper({ slides, onSlideChange }) {
   return (
     <Swiper
       effcet={"coverflow"}
@@ -29,7 +29,11 @@ function MovieSwiper({ slides }) {
     >
       {slides.map((slide) => (
         <SwiperSlide key={slide._id}>
-          <img src={slide.previewImg} alt={slide.title} />
+          <img
+            src={slide.previewImg}
+            alt={slide.title}
+            onClick={() => onSlideChange(slide._id)}
+          />
         </SwiperSlide>
       ))}
     </Swiper>

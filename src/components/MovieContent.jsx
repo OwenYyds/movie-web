@@ -1,17 +1,16 @@
 import React from "react";
 import "./movieContent.css";
 import Button from "./Button";
-import titleImg from "../images/transformer-title.png";
 
-function MovieContent() {
+function MovieContent({ movie }) {
   return (
-    <div className="content active">
-      <img src={titleImg} alt="Movie Title" className="movie-title" />
+    <div className={`content ${movie.active && "active"}`}>
+      <img src={movie.titleImg} alt="Movie Title" className="movie-title" />
       <h4>
-        <span>Year</span>
-        <span>age</span>
-        <span>length</span>
-        <span>category</span>
+        <span>{movie.year}</span>
+        <span>{movie.ageLimit}</span>
+        <span>{movie.length}</span>
+        <span>{movie.category}</span>
       </h4>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta sit
