@@ -17,7 +17,10 @@ function Header() {
         ))}
       </ul>
       <Search />
-      <Button icon={<i class="bi bi-box-arrow-in-right"></i>} name="SIGN IN" />
+      <Button
+        icon={<i className="bi bi-box-arrow-in-right"></i>}
+        name="SIGN IN"
+      />
     </header>
   );
 }

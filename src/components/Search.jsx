@@ -5,7 +5,7 @@ function Search() {
   return (
     <div className="search">
       <input type="text" placeholder="Search..." />
-      <i class="bi bi-search"></i>
+      <i className="bi bi-search"></i>
     </div>
   );
 }
