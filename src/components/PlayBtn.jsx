@@ -14,9 +14,9 @@ function PlayBtn({ movie }) {
           movie.active ? "active" : undefined
         }`}
       >
-        <a href="#" className="playBtn" onClick={toggleModal}>
+        <div className="playBtn" onClick={toggleModal}>
           <i className="bi bi-play"></i>
-        </a>
+        </div>
         <p>watch Trailer</p>
       </div>
       {movie.active && (
