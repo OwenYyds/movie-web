@@ -13,32 +13,14 @@ export const navListData = [
   },
   {
     id: 3,
-    link: "#speakers",
-    name: "speakers",
+    link: "#trend",
+    name: "trend",
     active: false,
   },
   {
     id: 4,
-    link: "#venue",
-    name: "venue",
-    active: false,
-  },
-  {
-    id: 5,
-    link: "#hotels",
-    name: "hotels",
-    active: false,
-  },
-  {
-    id: 6,
-    link: "#sponsors",
-    name: "sponsors",
-    active: false,
-  },
-  {
-    id: 7,
-    link: "#contact",
-    name: "contact",
+    link: "#blogs",
+    name: "blog",
     active: false,
   },
 ];
