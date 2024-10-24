@@ -7,6 +7,7 @@ import "swiper/css";
 import Header from "./pages/Header";
 import Banner from "./pages/Banner";
 import Main from "./pages/Main";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header />;
       <Banner />;
       <Main />
+      <Footer />
     </>
   );
 }
