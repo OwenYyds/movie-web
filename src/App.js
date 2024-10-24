@@ -7,9 +7,9 @@ import "swiper/css";
 
 import Header from "./pages/Header";
 import Banner from "./pages/Banner";
-import Main from "./pages/Main";
 import Footer from "./pages/Footer";
 import BackToTopBtn from "./components/BackToTopBtn";
+import Main from "./pages/Main";
 
 function App() {
   const [scroll, setScroll] = useState(0);
@@ -26,8 +26,8 @@ function App() {
   }, [scroll]);
   return (
     <>
-      <Header scroll={scroll} />;
-      <Banner />;
+      <Header scroll={scroll} />
+      <Banner />
       <Main />
       <Footer />
       <BackToTopBtn scroll={scroll} />
