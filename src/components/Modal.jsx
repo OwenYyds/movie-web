@@ -12,10 +12,10 @@ function Modal({ movie, modal, toggleModal }) {
         height="678"
         src={movie.video}
         title="LeBron &amp; Bronny James Play TOGETHER for the First Time (FULL VIDEO)"
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
       ></iframe>
     </div>
   );

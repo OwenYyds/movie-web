@@ -33,15 +33,15 @@ function Trend() {
                 spaceBetween: 20,
               },
               480: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 spaceBetween: 30,
               },
               640: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 30,
               },
               992: {
-                slidesPerView: 5,
+                slidesPerView: 4,
                 spaceBetween: 30,
               },
             }}
