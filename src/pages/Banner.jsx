@@ -9,7 +9,8 @@ function Banner() {
   const [movies, setMovies] = useState([]);
 
   const fetchMovies = () => {
-    fetch("http://localhost:3000/data/movieData.json")
+    const dataUrl = `${process.env.REACT_APP_API_URL}/data/movieData.json`;
+    fetch(dataUrl)
       .then((res) => res.json())
       .then((data) => {
         setMovies(data);
