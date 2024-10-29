@@ -18,9 +18,6 @@ jobs:
         with:
           node-version: "18"
 
-      - name: Update browserslist database
-        run: npx update-browserslist-db@latest
-
       - name: Install dependencies
         run: npm ci
 
@@ -32,4 +29,5 @@ jobs:
         with:
           github_token: ${{ secrets.PAT }}
           publish_dir: ./build
+          publish_branch: gh-pages
           commit_message: "Automated deployment from GitHub Actions"
