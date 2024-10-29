@@ -10,6 +10,7 @@ function Banner() {
 
   const fetchMovies = () => {
     const dataUrl = `${process.env.REACT_APP_API_URL}/data/movieData.json`;
+    console.log("API URL:", dataUrl);
     fetch(dataUrl)
       .then((res) => res.json())
       .then((data) => {
