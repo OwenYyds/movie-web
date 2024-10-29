@@ -6,7 +6,7 @@ function Blog() {
   const [blogs, setBlogs] = useState([]);
 
   const fetchMovies = () => {
-    const dataUrl = `${process.env.REACT_APP_API_URL}/assets/data/blogData.json`;
+    const dataUrl = `${process.env.REACT_APP_API_URL}/data/blogData.json`;
     fetch(dataUrl)
       .then((res) => res.json())
       .then((data) => {
